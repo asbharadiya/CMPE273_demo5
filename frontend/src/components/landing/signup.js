@@ -53,7 +53,7 @@ class Signup extends Component {
       isFormValid = false;
     }
     if(isFormValid) {
-      api.signup({email:this.email.value,password:this.password.value,first_name:this.firstName.value,last_name:this.lastName.value,date_of_birth:this.dateOfBirth.value})
+      api.signup({email:this.email.value,password:this.password.value,firstName:this.firstName.value,lastName:this.lastName.value,dateOfBirth:this.dateOfBirth.value})
       .then((res) => {
         if (res.status === 200) {
           this.props.checkSession();

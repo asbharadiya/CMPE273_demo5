@@ -9,7 +9,7 @@ class ItemRow extends Component {
           <i className="fa fa-file fa-3x" aria-hidden="true"></i>
     		</div>
     		<div className="item-content">
-    			<p className="item-title">{this.props.item.name}</p>
+    			<p className="item-title">{this.props.item.fileName}</p>
     		</div>
         <div className="item-options">
           
